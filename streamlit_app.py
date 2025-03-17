@@ -6,7 +6,7 @@ def load_model(filename):
   return model
 
 def predict_with_moel(model, user_input):
-  prediction = mode.predict([user_input])
+  prediction = model.predict([user_input])
   return prediction[0]
 
 
