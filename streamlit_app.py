@@ -1,6 +1,15 @@
 import streamlit as st
 import joblib
 
+def load_model(filename):
+  model = joblib.load(filename)
+  return model
+
+def predict_with_moel(model, user_input):
+  prediction = mode.predict([user_input])
+  return prediction[0]
+
+
 def main():
   st.title('Dermatology Machine Learning')
   st.write('Halo!')
